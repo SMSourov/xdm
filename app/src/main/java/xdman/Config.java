@@ -74,7 +74,8 @@ public class Config {
 	public void save() {
 		FileWriter fw = null;
 		try {
-			File file = new File(System.getProperty("user.home"), ".xdman/config.txt");
+//			File file = new File(System.getProperty("user.home"), ".xdman/config.txt");
+                        File file = new File(System.getProperty("user.dir"), ".xdman/config.txt");
 			fw = new FileWriter(file);
 
 			String newLine = "\n";
@@ -157,7 +158,8 @@ public class Config {
 		Logger.log("Loading config...");
 		BufferedReader br = null;
 		try {
-			File file = new File(System.getProperty("user.home"), ".xdman/config.txt");
+//			File file = new File(System.getProperty("user.home"), ".xdman/config.txt");
+                        File file = new File(System.getProperty("user.dir"), ".xdman/config.txt");
 			if (!file.exists()) {
 				return;
 			}
@@ -295,8 +297,9 @@ public class Config {
 
 	private Config() {
 
-		forceSingleFolder = false;
-		File f = new File(System.getProperty("user.home"), ".xdman");
+		forceSingleFolder = true;
+//		File f = new File(System.getProperty("user.home"), ".xdman");
+                File f = new File(System.getProperty("user.dir"), ".xdman");
 		if (!f.exists()) {
 			f.mkdirs();
 		}
@@ -329,13 +332,18 @@ public class Config {
 		this.setMinSegmentSize(256 * 1024);
 		this.parallalDownloads = 100;
 		this.minVidSize = 1 * 1024 * 1024;
-		this.defaultFileTypes = new String[] { "3GP", "7Z", "AVI", "BZ2", "DEB", "DOC", "DOCX", "EXE", "GZ", "ISO",
-				"MSI", "PDF", "PPT", "PPTX", "RAR", "RPM", "XLS", "XLSX", "SIT", "SITX", "TAR", "JAR", "ZIP", "XZ" };
+		this.defaultFileTypes = new String[] { "3GP" , "7Z" , "AAC" , "ACE" , "AIF" , "ARJ" , "ASF" , "APK" , "APPX" , "APPXBUNDLE" , 
+                    "AVI" , "BZ2" , "DEB" , "DOC" , "DOCX" , "EXE" , "GZ" , "GZIP" , "IMG" , "ISO" , "JAR" , 
+                    "LZH" , "M4A" , "M4V" , "MKV" , "MOV" , "MSI" , "MP3" , "MP4" , "MPA" , "MPE" , "MPEG" , 
+                    "MPG" , "MSI" , "MSU" , "OGG" , "OGV" , "PDF" , "PLJ" , "PPS" , "PPT" , "PPTX" , "QT" , 
+                    "RA" , "RAR" , "RM" , "RMVB" , "RPM" , "SEA" , "SIT" , "SITX" , "TAR" , "TIF" , "TIFF" , 
+                    "VSIX" , "WAV" , "WMA" , "WMV" , "XLS" , "XLSX" , "XZ" , "Z" , "ZIP" };
 		this.fileExts = defaultFileTypes;
 		this.autoShutdown = false;
 		this.blockedHosts = new String[] { "update.microsoft.com", "windowsupdate.com", "thwawte.com" };
-		this.defaultVideoTypes = new String[] { "MP4", "M3U8", "F4M", "WEBM", "OGG", "MP3", "AAC", "FLV", "MKV", "DIVX",
-				"MOV", "MPG", "MPEG", "OPUS" };
+		this.defaultVideoTypes = new String[] { "AAC" , "ASF" , "AVI" , "F4M" , "FLV" , "M4V" , "MKV" , "MOV" , "MP3" , "MP4" , 
+                    "MPE" , "MPEG" , "MPG" , "OGG" , "OGV" , "OPUS" , "QT" , "RM" , "SRT" , 
+                    "TS" , "TSV" , "VIDX" , "WEBM" , "WMV" };
 		this.vidExts = defaultVideoTypes;
 		this.vidUrls = new String[] { ".facebook.com|pagelet", "player.vimeo.com/", "instagram.com/p/" };
 		this.vidMime = new String[] { "video/", "audio/", "mpegurl", "f4m", "m3u8" };
