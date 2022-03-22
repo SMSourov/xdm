@@ -79,3 +79,9 @@ Steps are mentioned in: https://github.com/subhra74/xdm/wiki/Submitting-translat
 
 <p><b>In this repo, I've made changes for my own personal use.</b></p>
 <p><b>To start the program minimized in the system tray, use "xdman.jar -m"</b></p>
+<p>
+Few things you should know:
+	1. The program is not an independent program. You'll need Java. At the time of rebuilding this java program, I used JDK-17. So, I'd recommend you to use Java 17.
+	2. To use the video downloading feature, you need to have "youtube-dl.exe" and "xdman.jar" at the same directory. Otherwise, you won't be able to use the video downloading feature.
+	3. If you're having problems in the video downloading feature, I would recommend you to run "youtube-dl.exe --update". This is not a feature of XDM. it is a feature of "youtube-dl.exe".
+</p>
