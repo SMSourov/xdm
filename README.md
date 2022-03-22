@@ -81,8 +81,8 @@ Steps are mentioned in: https://github.com/subhra74/xdm/wiki/Submitting-translat
 <p><b>To start the program minimized in the system tray, use "xdman.jar -m"</b></p>
 <p>
 Few things you should know:
-	- The program is not an independent program. You'll need Java. At the time of rebuilding this java program, I used JDK-17. So, I'd recommend you to use Java 17.
-	- To use the video downloading feature, you need to have "youtube-dl.exe" and "xdman.jar" at the same directory. Otherwise, you won't be able to use the video downloading feature.
-	- If you're having problems in the video downloading feature, I would recommend you to run "youtube-dl.exe --update". This is not a feature of XDM. it is a feature of "youtube-dl.exe".
-	- I'd recommend you to not to put the jar file in the C drive or in the root partition, keep the file in the seperated drive/partition. So, if you had to reset or make a clean installation of the OS, you won't loose the data. I've remade this ONLY for this reason.
+- The program is not an independent program. You'll need Java. At the time of rebuilding this java program, I used JDK-17. So, I'd recommend you to use Java 17.
+- To use the video downloading feature, you need to have "youtube-dl.exe" and "xdman.jar" at the same directory. Otherwise, you won't be able to use the video downloading feature.
+- If you're having problems in the video downloading feature, I would recommend you to run "youtube-dl.exe --update". This is not a feature of XDM. it is a feature of "youtube-dl.exe".
+- I'd recommend you to not to put the jar file in the C drive or in the root partition, keep the file in the seperated drive/partition. So, if you had to reset or make a clean installation of the OS, you won't loose the data. I've remade this ONLY for this reason.
 </p>
