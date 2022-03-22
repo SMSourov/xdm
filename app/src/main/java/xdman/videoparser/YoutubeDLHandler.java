@@ -45,14 +45,22 @@ public class YoutubeDLHandler {
 		try {
 			List<String> args = new ArrayList<String>();
 			args.add(ydlLocation);
-			args.add("--no-warnings");
-			args.add("-q");
-			args.add("-i");
-			args.add("-J");
+                        // In the next 4 lines, in the string, the spaces are added by me.
+			args.add(" --no-warnings");
+			args.add(" -q");
+			args.add(" -i");
+			args.add(" -J");
+                        // The next 4 lines made by me.
+//                        args.add(" --write-sub");
+//                        args.add(" --all-subs");
+//                        args.add(" --sub-format best");
+//                        args.add(" --convert-subs srt");
+                        
+                        // In the next block, in the string, the spaces are added by me.
 			if (!(StringUtils.isNullOrEmptyOrBlank(user) || StringUtils.isNullOrEmptyOrBlank(pass))) {
-				args.add("-u");
+				args.add(" -u");
 				args.add(user);
-				args.add("-p");
+				args.add(" -p");
 				args.add(pass);
 			}
 
