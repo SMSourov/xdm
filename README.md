@@ -77,5 +77,5 @@ Steps are mentioned in: https://github.com/subhra74/xdm/wiki/Submitting-translat
 [20]: #
 [21]: https://sourceforge.net/p/xdman/blog/2018/01/xdm-integration-with-microsoft-edge/
 
-**In this repo, I've made changes for my own personal use.""
-**To start the program minimized in the system tray, use "xdman.jar -m"**
+<p>**In this repo, I've made changes for my own personal use.**</p>
+<p>**To start the program minimized in the system tray, use "xdman.jar -m"**</p>
