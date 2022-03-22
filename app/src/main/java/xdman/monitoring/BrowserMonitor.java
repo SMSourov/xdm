@@ -45,8 +45,10 @@ public class BrowserMonitor implements Runnable {
 			if (!Files.exists(homePath)) {
 				Files.createDirectories(homePath);
 			}
-			Files.writeString(Paths.get(System.getProperty("user.home"), ".xdman", "settings.json"), getSync());
-			Files.writeString(Paths.get(System.getProperty("user.home"), ".xdman", "settings_updated"), "");
+//			Files.writeString(Paths.get(System.getProperty("user.home"), ".xdman", "settings.json"), getSync());
+                        Files.writeString(Paths.get(System.getProperty("user.dir"), ".xdman", "settings.json"), getSync());
+//			Files.writeString(Paths.get(System.getProperty("user.home"), ".xdman", "settings_updated"), "");
+                        Files.writeString(Paths.get(System.getProperty("user.dir"), ".xdman", "settings_updated"), "");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
