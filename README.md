@@ -76,3 +76,6 @@ Steps are mentioned in: https://github.com/subhra74/xdm/wiki/Submitting-translat
 [19]: https://addons.mozilla.org/en-US/firefox/addon/xdm-browser-monitor/
 [20]: #
 [21]: https://sourceforge.net/p/xdman/blog/2018/01/xdm-integration-with-microsoft-edge/
+
+**In this repo, I've made changes for my own personal use.""
+**To start the program minimized in the system tray, use "xdman.jar -m"**
